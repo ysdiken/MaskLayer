@@ -1,0 +1,1 @@
+{Person_1} ve eşi {Person_2}, {Company_1}'ndan {Money_Amount_1} konut kredisi aldı; tutar {IBAN_1} numaralı ortak hesaba yatırıldı. {Person_1}'ün annesi {Person_3} kefil oldu ve taksitler {Person_1}'ün maaş hesabından ödenecek.

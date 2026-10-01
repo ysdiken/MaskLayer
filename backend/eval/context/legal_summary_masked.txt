@@ -1,0 +1,1 @@
+Avukat {Person_1}, müvekkili {Person_2} adına {Company_1}'ye dava açtı. {Person_2} {Date_1} tarihinden beri {Company_1}'de mühendisti. {Company_1} insan kaynakları müdürü {Person_3} feshi savundu; mahkeme {Person_2} lehine {Money_Amount_1} tazminata karar verdi.

@@ -1,0 +1,1 @@
+{Person_1}, {Company_1} genel müdürü olarak {Date_1} tarihinde {Company_2} yetkilisi {Person_2} ile görüştü. {Company_3}, {Company_2}'ye {Money_Amount_1} tutarında yazılım hizmeti verecek; proje {Location_1}'den yürütülecek ve ödeme {Location_2} şubesinden yapılacaktır.

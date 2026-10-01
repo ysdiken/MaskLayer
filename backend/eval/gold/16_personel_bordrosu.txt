@@ -1,0 +1,9 @@
+PERSONEL BORDROSU
+
+Personel: [[Gül Aydın|Person]]
+TC Kimlik No: [[69345303474|TC_No]]
+SGK No: [[5544332211009|SGK_No]]
+Görev Yeri: [[Bursa|Location]]
+Net Maaş: [[32.750,00 TL|Money_Amount]]
+Ödeme Tarihi: [[30.06.2024|Date]]
+IBAN: [[TR942359689956005985694858|IBAN]]

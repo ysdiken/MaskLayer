@@ -1,0 +1,10 @@
+KREDİ BAŞVURU FORMU
+
+Başvuru Sahibi: [[Hakan Çelik|Person]]
+TC Kimlik No: [[92276800408|TC_No]]
+SGK Sicil No: [[9876543210987|SGK_No]]
+Talep Edilen Tutar: [[250.000,00 TL|Money_Amount]]
+Aylık Gelir: [[38.500,00 TL|Money_Amount]]
+Telefon: [[0533 987 65 43|Phone_No]]
+IBAN: [[TR021891722904567955171187|IBAN]]
+Şube: [[Ankara|Location]]

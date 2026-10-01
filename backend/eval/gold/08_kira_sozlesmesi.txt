@@ -1,0 +1,13 @@
+KİRA SÖZLEŞMESİ
+
+Kiraya Veren: [[Orhan Yılmaz|Person]] (bundan böyle "Mülk Sahibi" olarak anılacaktır)
+Kiracı: [[Sema Çelik|Person]]
+
+İşbu sözleşme aşağıda bilgileri verilen taşınmazın kiralanmasına ilişkindir.
+
+Taşınmaz adresi: [[Cumhuriyet Caddesi No: 18|Address]]
+Şehir: [[Antalya|Location]]
+
+Aylık kira bedeli [[7.500,00 TL|Money_Amount]] olup, her ayın 5'inde [[Orhan Yılmaz|Person]] adına kayıtlı [[TR330006100519786457841326|IBAN]] numaralı banka hesabına yatırılacaktır.
+
+Sözleşme [[01.06.2024|Date]] tarihinde yürürlüğe girmiş ve [[Sema Çelik|Person]] tarafından imzalanmıştır.

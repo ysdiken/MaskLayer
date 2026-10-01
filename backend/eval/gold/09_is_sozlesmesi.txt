@@ -1,0 +1,10 @@
+İŞ SÖZLEŞMESİ
+
+İşveren: [[Mavi Ada Teknoloji A.Ş.|Company]]
+Çalışan: [[Burcu Aydın|Person]]
+TC Kimlik No: [[18492871404|TC_No]]
+İşe Başlama Tarihi: [[15.01.2024|Date]]
+Aylık Brüt Ücret: [[45.000,00 TL|Money_Amount]]
+Çalışma Yeri: [[İstanbul|Location]]
+
+Çalışan, 4857 sayılı İş Kanunu ve ilgili mevzuat hükümlerine tabidir. Maaş ödemeleri [[TR094542332270224278458282|IBAN]] numaralı hesaba yapılacaktır.

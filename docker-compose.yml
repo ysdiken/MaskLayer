@@ -1,0 +1,89 @@
+# MaskLayer — infrastructure services
+#
+# Runs Redis, PostgreSQL, and MinIO as local containers.
+# FastAPI (backend) and React (frontend) run natively for hot-reload.
+#
+# Usage:
+#   Start:   docker compose up -d
+#   Stop:    docker compose down
+#   Logs:    docker compose logs -f
+#   Reset:   docker compose down -v   ← also deletes stored data
+#
+# Credentials are read from .env (copy from .env.example and edit).
+
+services:
+
+  # ── Redis ──────────────────────────────────────────────────────────────────
+  # Stores bidirectional token↔value maps for PII masking.
+  # Key format:  mask:<job_id>:<placeholder>  →  original value
+  # Keys have a TTL so sensitive data never persists indefinitely (KVKK).
+  # Also used as the Celery task queue broker once async jobs are wired in.
+  redis:
+    image: redis:7.2-alpine          # Lightweight Alpine-based image (~40 MB)
+    container_name: masklayer_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"                  # Exposed on localhost:6379
+    volumes:
+      - redis_data:/data             # Persist RDB snapshots across restarts
+    command: >
+      redis-server
+      --requirepass ${REDIS_PASSWORD}
+      --maxmemory 512mb
+      --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── PostgreSQL ─────────────────────────────────────────────────────────────
+  # Stores jobs, audit trail, users, and entity statistics.
+  # pg_audit extension will be enabled for KVKK compliance evidence.
+  postgres:
+    image: postgres:16-alpine
+    container_name: masklayer_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"                  # Exposed on localhost:5432
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── MinIO ──────────────────────────────────────────────────────────────────
+  # S3-compatible on-prem object store for original and masked files.
+  # Original documents → masklayer-originals bucket (restricted access)
+  # Masked documents   → masklayer-masked bucket
+  minio:
+    image: minio/minio:latest
+    container_name: masklayer_minio
+    restart: unless-stopped
+    ports:
+      - "9000:9000"                  # S3 API endpoint
+      - "9001:9001"                  # MinIO web console (browser UI)
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+# ── Named volumes (data survives container restarts) ──────────────────────────
+volumes:
+  redis_data:
+  postgres_data:
+  minio_data:

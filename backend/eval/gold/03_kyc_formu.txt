@@ -1,0 +1,12 @@
+MÜŞTERİ TANIMA FORMU
+
+Ad Soyad: [[Elif Şahin|Person]]
+TC Kimlik No: [[10000000146|TC_No]]
+Müşteri No: [[10293847|Customer_No]]
+SGK Sicil No: [[1234567890123|SGK_No]]
+Anne Adı: [[Fatma|Person]]
+Baba Adı: [[Hasan Şahin|Person]]
+Doğum Tarihi: [[12.05.1990|Date]]
+Telefon: [[0555 444 33 22|Phone_No]]
+E-posta: [[elif.sahin@firma.com.tr|Email]]
+Çalıştığı Şube: [[İzmir|Location]]

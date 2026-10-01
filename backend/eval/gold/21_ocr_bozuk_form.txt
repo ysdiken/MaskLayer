@@ -1,0 +1,8 @@
+MUSTERI BILGI FORMU
+
+Ad Soyad: [[Gokhan Yildiz|Person]]
+TC Kimlik No: [[92276800408|TC_No]]
+Musteri No: [[77665544|Customer_No]]
+Telefon: [[0532 111 22 33|Phone_No]]
+Adres: [[Inonu Caddesi No: 12|Address]]
+Sehir: [[Izmir|Location]]

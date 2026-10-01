@@ -1,0 +1,12 @@
+HESAP ÖZETİ
+
+Hesap Sahibi: [[Ayşe Kara|Person]]
+IBAN: [[TR906641177353453333847022|IBAN]]
+Dönem: [[01.05.2024|Date]] - [[31.05.2024|Date]]
+
+İşlem Hareketleri:
+[[03.05.2024|Date]] Market harcaması [[1.250,00 TL|Money_Amount]]
+[[12.05.2024|Date]] Maaş ödemesi [[42.000,00 TL|Money_Amount]]
+[[28.05.2024|Date]] Kira ödemesi [[9.500,00 TL|Money_Amount]]
+
+Güncel Bakiye: [[31.250,00 TL|Money_Amount]]

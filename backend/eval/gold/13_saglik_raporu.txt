@@ -1,0 +1,9 @@
+SAĞLIK RAPORU
+
+Hasta Adı: [[Zeynep Demir|Person]]
+TC Kimlik No: [[20657125468|TC_No]]
+Doğum Tarihi: [[07.08.1985|Date]]
+Rapor Tarihi: [[10.06.2024|Date]]
+Düzenleyen Hekim: Dr. [[Ahmet Yıldırım|Person]]
+
+Hasta [[İzmir|Location]] ilinde ikamet etmektedir. Kontrol randevusu [[24.06.2024|Date]] tarihine ertelenmiştir.

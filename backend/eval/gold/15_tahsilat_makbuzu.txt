@@ -1,0 +1,8 @@
+TAHSİLAT MAKBUZU
+
+Müşteri No: [[88123456|Customer_No]]
+Tahsil Edilen Kişi: [[Selim Koç|Person]]
+Tutar: [[3.450,00 TL|Money_Amount]]
+Tarih: [[18.06.2024|Date]]
+Dekont No: [[9988776655|Reference_No]]
+İşlem No: [[TX-55667788|Reference_No]]

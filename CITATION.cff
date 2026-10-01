@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use MaskLayer in your work, please cite it as below."
+type: software
+title: "MaskLayer: Context-Preserving PII Masking for Turkish Documents"
+authors:
+  - family-names: "Şıkdiken"
+    given-names: "Yavuz"
+repository-code: "https://github.com/ysdiken/MaskLayer"
+license: Apache-2.0
+version: "0.6.1"
+date-released: "2026-10-01"
+abstract: >-
+  MaskLayer replaces personal and financial data in Turkish documents with
+  consistent placeholders, combining checksum-validated regular expressions,
+  a fine-tuned BERTurk-based NER model and a gazetteer, so that sensitive
+  documents can be processed by LLMs without the original values leaving
+  the organisation's infrastructure.
+keywords:
+  - PII
+  - anonymization
+  - data masking
+  - named entity recognition
+  - Turkish NLP
+  - KVKK
+  - LLM

@@ -1,0 +1,8 @@
+RESMİ YAZI
+
+GÖNDEREN: [[AHMET YILMAZ|Person]]
+KURUM: [[DEMİR İNŞAAT A.Ş.|Company]]
+TARİH: [[12.06.2024|Date]]
+TUTAR: [[500.000,00 TL|Money_Amount]]
+ŞEHİR: [[İSTANBUL|Location]]
+TC: [[18492871404|TC_No]]

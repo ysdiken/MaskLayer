@@ -1,0 +1,9 @@
+VEKÂLETNAME
+
+Vekâlet Veren: [[Mehmet Şahin|Person]]
+TC Kimlik No: [[91043557880|TC_No]]
+Vekil: Av. [[Deniz Yıldız|Person]]
+
+Yukarıda kimlik bilgileri yazılı [[Mehmet Şahin|Person]], [[15.03.2024|Date]] tarihinde noter huzurunda işbu vekâletnameyi düzenlemiştir.
+
+İkamet Adresi: [[İstiklal Caddesi No: 100|Address]]

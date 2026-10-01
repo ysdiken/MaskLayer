@@ -1,0 +1,1 @@
+{Company_1} genel müdürü {Person_1}, {Date_1} tarihinde {Company_2} yetkilisi {Person_2} ile bir araya geldi. {Company_3}'nin {Company_2}'ye {Money_Amount_1} tutarında yazılım hizmeti sağlaması kararlaştırıldı. {Person_1} projenin {Location_1} ofisinden yürütüleceğini belirtti. {Person_2} ise ödemenin {Location_2} şubesinden yapılacağını ekledi.

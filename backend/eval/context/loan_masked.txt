@@ -1,0 +1,1 @@
+{Person_1}, eşi {Person_2} ile birlikte {Company_1}'ndan {Money_Amount_1} konut kredisi kullandı. Kredi, {IBAN_1} numaralı ortak hesaplarına yatırıldı. {Person_1}'ün annesi {Person_3} kredinin kefili oldu. Aylık taksitler her ayın beşinde {Person_1}'ün maaş hesabından ödenecektir.
