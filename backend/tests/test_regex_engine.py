@@ -222,7 +222,7 @@ class TestTaxNoDetection:
 
 class TestEmailDetection:
     def test_detects_standard_email(self):
-        text = "İletişim için ali.yilmaz@sirket.com.tr adresini kullanın."
+        text = "İletişim için ali.yilmaz@sirket.example.com adresini kullanın."
         spans = engine.detect(text)
         assert any(s.label == "Email" and "ali.yilmaz" in s.text for s in spans)
 
@@ -463,7 +463,7 @@ class TestEndToEnd:
         "TC Kimlik No 10000000146 sahibi müşterimizin\n"
         "TR330006100519786457841326 numaralı IBAN hesabına\n"
         "15 Haziran 2024 tarihinde ₺12.500,00 transfer yapılmıştır.\n"
-        "İletişim: ali.veli@banka.com.tr veya 0532 123 45 67\n"
+        "İletişim: ali.veli@banka.example.com veya 0532 123 45 67\n"
         "Araç plakası: 34 ABC 1234\n"
         "Vergi No: 1234567890\n"
     )

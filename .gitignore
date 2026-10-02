@@ -55,7 +55,7 @@ minio_data/
 # Private thesis write-up — kept local, never published
 THESIS_NOTES.md
 
-# Real bank contract texts (© T. Garanti BBVA) — local only; README is published
+# Real bank contract texts (bank's copyright) — local only; README is published
 backend/eval/real/*.txt
 
 # OS / editor

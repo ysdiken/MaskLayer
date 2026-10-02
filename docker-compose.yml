@@ -23,7 +23,7 @@ services:
     container_name: masklayer_redis
     restart: unless-stopped
     ports:
-      - "6379:6379"                  # Exposed on localhost:6379
+      - "127.0.0.1:6379:6379"                  # Exposed on localhost:6379
     volumes:
       - redis_data:/data             # Persist RDB snapshots across restarts
     command: >
@@ -45,7 +45,7 @@ services:
     container_name: masklayer_postgres
     restart: unless-stopped
     ports:
-      - "5432:5432"                  # Exposed on localhost:5432
+      - "127.0.0.1:5432:5432"                  # Exposed on localhost:5432
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
@@ -68,8 +68,8 @@ services:
     container_name: masklayer_minio
     restart: unless-stopped
     ports:
-      - "9000:9000"                  # S3 API endpoint
-      - "9001:9001"                  # MinIO web console (browser UI)
+      - "127.0.0.1:9000:9000"                  # S3 API endpoint
+      - "127.0.0.1:9001:9001"                  # MinIO web console (browser UI)
     environment:
       MINIO_ROOT_USER: ${MINIO_ROOT_USER}
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}

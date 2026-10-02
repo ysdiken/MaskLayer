@@ -47,7 +47,7 @@ from app.models.schemas import ManualSpanRequest, Span
 #   0.5.0 — gazetteer detector (source="gazetteer"): company legal-form suffixes
 #           (fixes A.Ş. boundary), Turkish name/place lists; public-institution
 #           suppression (courts/ministries/notaries); Address over-capture fix.
-#   0.5.1 — real-document fixes (motivated by a live Garanti contract): bare
+#   0.5.1 — real-document fixes (motivated by a live bank contract): bare
 #           parenthetical alias extraction ("Kredi"/"Biz"/"Siz" defined terms no
 #           longer masked); institution suppression broadened (case endings +
 #           Birliği/Sistemi/heyeti/tüketici mahkemesi).

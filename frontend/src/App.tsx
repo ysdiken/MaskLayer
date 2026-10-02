@@ -1509,7 +1509,7 @@ const SAMPLE_TEXT =
 TC Kimlik No 10000000146 sahibi Ahmet Yılmaz'ın
 TR330006100519786457841326 numaralı IBAN hesabına
 15 Haziran 2024 tarihinde ₺12.500,00 transfer yapılmıştır.
-İletişim: ahmet.yilmaz@banka.com.tr veya 0532 123 45 67
+İletişim: ahmet.yilmaz@banka.example.com veya 0532 123 45 67
 Araç: 34 ABC 1234  Pasaport: U12345678
 Şirket: Türk Hava Yolları A.Ş. — İstanbul ofisi`
 

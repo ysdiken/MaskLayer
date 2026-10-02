@@ -9,7 +9,7 @@ Each masking job gets its own Redis Hash:
 Example keys after masking a document:
   mask:abc-123 → { "{TC_No_1}": "10000000146",
                    "{IBAN_1}":  "TR330006100519786457841326",
-                   "{Email_1}": "ali@ornek.com" }
+                   "{Email_1}": "ali@example.com" }
 
 De-masking reads this hash and replaces placeholders in the LLM response
 back with original values — entirely on-prem, never touching the network.

@@ -45,7 +45,7 @@ DOCUMENT = (
     "TC Kimlik No 10000000146 sahibi Ahmet Yılmaz'ın\n"
     "TR330006100519786457841326 numaralı IBAN hesabına\n"
     "15 Haziran 2024 tarihinde ₺12.500,00 transfer yapılmıştır.\n"
-    "İletişim: ahmet.yilmaz@banka.com.tr veya 0532 123 45 67\n"
+    "İletişim: ahmet.yilmaz@banka.example.com veya 0532 123 45 67\n"
     "Araç: 34 ABC 1234  Pasaport: U12345678\n"
     "Şirket: Türk Hava Yolları A.Ş. — İstanbul ofisi\n"
 )
@@ -106,7 +106,7 @@ async def run_tests():
         pii_checks = {
             "TC Kimlik No":  "10000000146",
             "IBAN":          "TR330006100519786457841326",
-            "E-posta":       "ahmet.yilmaz@banka.com.tr",
+            "E-posta":       "ahmet.yilmaz@banka.example.com",
             "Telefon":       "0532 123 45 67",
         }
         for label, value in pii_checks.items():

@@ -7,7 +7,7 @@
 
 ## The document
 
-`tuketici_kredisi_filled.txt` — a real 9-page Garanti BBVA vehicle-loan contract
+`tuketici_kredisi_filled.txt` — a real 9-page vehicle-loan contract from a large Turkish bank
 (`Tüketici Kredisi Sözleşmesi`), extracted with the project's own PDF pipeline,
 with the customer fields filled with fictional but realistic data (valid TC/IBAN
 checksums). The **legal language, layout, clauses, bank header, and signatures
@@ -16,7 +16,7 @@ is the pipeline output.
 
 > **Data availability:** the contract texts (`*_filled.txt`, `*_masked*.txt`)
 > are **not distributed** in this repository — the templates are copyrighted by
-> T. Garanti BBVA. Only the analysis and numbers are published here. To
+> the issuing bank. Only the analysis and numbers are published here. To
 > reproduce, extract a publicly available bank contract template with the
 > project's PDF pipeline and fill the customer fields with fictional data.
 >
@@ -89,7 +89,8 @@ PY
 
 ## Update — 5-document real corpus
 
-Four more real Garanti BBVA templates were filled + masked (all in this folder):
+Four more real templates from the same bank were filled + masked (kept locally,
+see *Data availability* above):
 `virman` (transfer instruction, 1pg), `platin_maden` (precious-metal deposit,
 3pg), `kredi_bilgi_formu` (credit info form, 9pg), `kredi_sozlesme_sube` (branch
 credit contract, 9pg).

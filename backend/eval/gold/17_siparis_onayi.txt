@@ -3,7 +3,7 @@ SİPARİŞ ONAYI
 Alıcı: [[Ece Yılmaz|Person]]
 Teslimat Adresi: [[Bağdat Caddesi No: 250|Address]]
 Telefon: [[0541 222 33 44|Phone_No]]
-E-posta: [[ece.yilmaz@mail.com|Email]]
+E-posta: [[ece.yilmaz@mail.example.com|Email]]
 Kart No: [[4111 1111 1111 1111|Card_No]]
 Toplam Tutar: [[1.899,90 TL|Money_Amount]]
 

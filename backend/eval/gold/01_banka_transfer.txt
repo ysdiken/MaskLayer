@@ -2,7 +2,7 @@ Sayın Müşterimiz,
 
 TC Kimlik No [[10000000146|TC_No]] sahibi [[Ahmet Yılmaz|Person]]'ın [[TR330006100519786457841326|IBAN]] numaralı IBAN hesabına [[15 Haziran 2024|Date]] tarihinde [[₺12.500,00|Money_Amount]] transfer yapılmıştır.
 
-İletişim için [[ahmet.yilmaz@banka.com.tr|Email]] adresinden veya [[0532 123 45 67|Phone_No]] numarasından bize ulaşabilirsiniz.
+İletişim için [[ahmet.yilmaz@banka.example.com|Email]] adresinden veya [[0532 123 45 67|Phone_No]] numarasından bize ulaşabilirsiniz.
 
 Araç plakası: [[34 ABC 1234|License_Plate]]
 Pasaport No: [[U12345678|Passport_No]]

@@ -52,8 +52,8 @@ slightly (a few new FPs the post-processing absorbs).
 
 **Across all 5 real contracts** the capitalised-noun over-tagging is gone — e.g.
 `platin_maden` went from **`Platin` ×15** to 0; remaining `Company` detections
-are now mostly legitimate (Garanti, the Doğuş dealer, Volkswagen, Garanti
-Emeklilik) rather than defined-term junk.
+are now mostly legitimate (the bank itself, the car dealer, the vehicle brand,
+the bank's pension subsidiary) rather than defined-term junk.
 
 ## Honest limitations
 

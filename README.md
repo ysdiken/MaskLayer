@@ -168,6 +168,24 @@ infra/          PostgreSQL init script
   context. Compliance with KVKK or any other regulation remains the
   responsibility of the deploying organisation.
 
+## Security
+
+MaskLayer is a research prototype and ships **without authentication**:
+
+- Every API endpoint is open, including `/api/v1/unmask` (which returns the
+  original values for a job) and `PUT /api/v1/admin/mask-policy`.
+- CORS allows requests from any origin.
+- `docker-compose.yml` binds Redis, PostgreSQL and MinIO to `127.0.0.1` only.
+  Keep it that way: Redis holds the placeholder ↔ original value maps.
+
+Run it only on a trusted machine. Before exposing it to any network, add
+authentication (for example an API gateway or OAuth2), restrict CORS to your
+frontend's origin, and set strong passwords in `.env`.
+
+To report a vulnerability, please use GitHub's private
+[security advisory](https://github.com/ysdiken/MaskLayer/security/advisories/new)
+form rather than a public issue.
+
 ## License
 
 Licensed under the [Apache License 2.0](LICENSE). You are free to use, modify

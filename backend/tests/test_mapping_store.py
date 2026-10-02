@@ -44,7 +44,7 @@ async def store(redis):
 
 class TestSaveAndRead:
     async def test_save_and_get_all(self, store):
-        mapping = {"{TC_No_1}": "10000000146", "{Email_1}": "ali@ornek.com"}
+        mapping = {"{TC_No_1}": "10000000146", "{Email_1}": "ali@example.com"}
         await store.save_mapping("job-1", mapping)
         result = await store.get_all("job-1")
         assert result == mapping
@@ -79,7 +79,7 @@ class TestSaveAndRead:
         mapping = {
             "{TC_No_1}": "10000000146",
             "{IBAN_1}": "TR330006100519786457841326",
-            "{Email_1}": "ali@ornek.com",
+            "{Email_1}": "ali@example.com",
             "{Phone_No_1}": "05321234567",
         }
         await store.save_mapping("job-6", mapping)
@@ -93,14 +93,14 @@ class TestSaveAndRead:
 
 class TestUnmaskText:
     async def test_full_round_trip(self, store):
-        mapping = {"{TC_No_1}": "10000000146", "{Email_1}": "ali@ornek.com"}
+        mapping = {"{TC_No_1}": "10000000146", "{Email_1}": "ali@example.com"}
         await store.save_mapping("job-rt", mapping)
 
         masked = "Müşteri {TC_No_1} numaralı kişi, {Email_1} adresine bildirim gönderildi."
         result = await store.unmask_text("job-rt", masked)
 
         assert "10000000146" in result
-        assert "ali@ornek.com" in result
+        assert "ali@example.com" in result
         assert "{TC_No_1}" not in result
         assert "{Email_1}" not in result
 
@@ -197,7 +197,7 @@ class TestEndToEndRoundTrip:
         "TC Kimlik No 10000000146 sahibi müşterimizin\n"
         "TR330006100519786457841326 numaralı IBAN hesabına\n"
         "15 Haziran 2024 tarihinde ₺12.500,00 transfer yapılmıştır.\n"
-        "İletişim: ali.veli@banka.com.tr veya 0532 123 45 67\n"
+        "İletişim: ali.veli@banka.example.com veya 0532 123 45 67\n"
     )
 
     async def test_masked_text_contains_no_original_pii(self, store):
